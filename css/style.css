@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*asi no crece la caja mas de la cuenta al añadir padding, el padding y los margenes se añaden dentro */
+}
+.logo{
+    width: 150px;
+    height: 75px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main{
+    padding: 20px;
+
+}
+.post{
+    margin-bottom: 20px;
+}
+.autor{
+    display: flex;
+    gap: 50px;
+
+}
+.autor article{
+    width: 50%;
+}
+.imagenautor{
+    width: 100%;
+}
+@media all and (min-width:780px) {
+    body{ 
+        border-left: 20px solid gray;
+        background-image:url(../image/hojas.jpg) ;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        background-size: 100% 100%;
+
+    }
+    .header{
+        align-items: start;
+        padding: 20px;
+    }
+.autor{
+    flex-direction: column;
+    transform: translateY(-120px);
+}
+
+    main{
+        display: flex;
+    
+    }
+
+}
